@@ -96,8 +96,8 @@ export class Server {
                 return
             }
 
-            // const number = Math.floor(Math.random() * 10) + 1
-            const number = Math.floor(Math.random() * 3) + 1
+            const number = Math.floor(Math.random() * 10) + 1
+            //const number = Math.floor(Math.random() * 3) + 1
 
             // send a message to a random sibling
             if (number == 1 || number == 2) {

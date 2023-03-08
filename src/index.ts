@@ -16,8 +16,8 @@ fs.mkdirSync(folderPath)
 
 // initialize servers
 for (let i = 0; i < NUMBER_OF_MACHINES; i++) {
-    // const clockRate = Math.floor(Math.random() * 6) + 1
-    const clockRate = { 0: 1, 1: 3, 2: 6 }[i]
+    const clockRate = Math.floor(Math.random() * 6) + 1
+    // const clockRate = { 0: 1, 1: 3, 2: 6 }[i]
     const port = START_PORT + i
 
     const server = new Server({ clockRate, port, initialisedAt })
